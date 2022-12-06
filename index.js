@@ -2,9 +2,10 @@ require('dotenv').config();
 const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
-const mongoString = process.env.DATABASE_URL;
 
-mongoose.connect(mongoString);
+
+
+mongoose.connect("mongodb+srv://jackyyui321:Hkg277340@cluster0.ck0gorv.mongodb.net/?retryWrites=true&w=majority");
 const database = mongoose.connection;
 
 database.on('error', (error) => {
