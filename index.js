@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 
 
-mongoose.connect("mongodb+srv://jackyyui321:Hkg277340@cluster0.ck0gorv.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://jackyyui321:Hkg277340@cluster0.ck0gorv.mongodb.net/Diary?retryWrites=true&w=majority");
 const database = mongoose.connection;
 
 database.on('error', (error) => {
