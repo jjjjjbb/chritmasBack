@@ -19,7 +19,7 @@ router.get('/getAll', async (req, res) => {
 router.get('/getDiary', async (req, res) => {
     try {
         const date = req.query["date"];
-        const data = await Model.find({ date: date});
+        const data = await Model.find({ date: date.toString()});
         res.json(data)
     }
     catch (error) {
